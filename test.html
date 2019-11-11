@@ -1,0 +1,183 @@
+<style>
+	.display, .panel {
+	  width: 9em;
+	  text-align: center;
+	}
+	.display {
+	  margin: auto;
+	}
+	.display div {
+	  display: inline-block;
+	  margin: 0.2em;
+	}
+	.number {
+	  padding: 0.2em;
+	  width: 2em;
+	  text-align: right;
+	}
+	#up-indicator.lit , .up{
+	  color: green;
+	}
+	#down-indicator.lit .down{
+	  color: red;
+	}
+	.panel {
+	  margin: auto;
+	}
+	.panel button {
+	  display: block;
+	  margin: auto;
+	  /*width: 3em;*/
+	}
+	.panel button.lit {
+	  color: yellow;
+	}
+
+
+	/*mine*/
+	.square
+	{
+	  height: 150px;
+	  width: 150px;
+	  background-color: #cecece;
+	  margin-left: 20px;
+	}
+
+	i
+	{
+
+	  border: solid #2a8ce8;
+	  border-width: 0 3px 3px 0;
+	  display: inline-block;
+	  padding: 3px;
+	}
+	.up-down
+	{
+		margin-left: -20px;
+	}
+	.up
+	{
+	  transform: rotate(-135deg);
+	  -webkit-transform: rotate(-135deg);
+	}
+	.down
+	{
+	  transform: rotate(45deg);
+	  -webkit-transform: rotate(45deg);
+	}
+	/*.padding-left
+	{
+		margin-left: 25px;
+	}*/
+	.level-5
+	{
+		font-size:48px;
+		font-family: "Arial";
+		margin-top: -75px;
+		margin-left: -100px;
+	}
+	.level-4
+	{
+		font-size:48px;
+		font-family: "Arial";
+		margin-left: -100px;
+		padding-top: 45px;
+	}
+	.center {
+		text-align: center;
+	}
+	.circle {
+	  	height: 20px;
+	  	width: 20px;
+	  	background-color: #fff;
+	  	color:#2a8ce8;
+	  	border-radius: 50%;
+	}
+	.level-button {
+		font-size:20px;
+		font-family: "Arial";
+		margin-left: 97px;
+	}
+	.buttons
+	{
+		margin-top: -36px;
+
+	}
+
+</style>
+
+
+<div class="display">
+  <div class="arrow" id="down-indicator">⬇︎</i></div>
+  <div class="number" id="floor-number"></div>
+  <div class="arrow" id="up-indicator">⬆︎</div>
+</div>
+
+
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="panel">
+		  <button class="circle" value="5">5</button>
+		  <button class="circle" value="4">4</button>
+		  <button class="circle" value="3">3</button>
+		  <button class="circle" value="2">2</button>
+		  <button class="circle" value="1">1</button>
+		  <button class="circle" value="0">0</button>
+		</div>
+		<div class="level-5 center">
+			5
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="level-4 center">
+			4
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="level-4 center">
+			3
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="level-4 center">
+			2
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="level-4 center">
+			1
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<div class="square padding-left">
+	<div class="buttons level-button center">
+		<div class="level-4 center">
+			0
+		</div>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/main.js"></script>

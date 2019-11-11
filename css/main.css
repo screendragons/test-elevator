@@ -1,0 +1,151 @@
+#canvas {
+  font-family:sans-serif;
+ width:100%;
+  height:500px;
+  background: url(http://www.pictures-croatia.com/primosten/primosten-2m6e.jpg);
+  padding:40px 0 ;
+  background-size:cover;
+
+  #building {
+
+    width:20%;
+    background:#594D47;
+    height:500px;
+    margin:0 auto;
+    overflow:hidden;
+    box-shadow:0 -20px 0 #574B45;
+
+    #elevatorShaft {
+
+     background:#362E2B;
+      width:33.33%;
+      height:500px;
+      margin: 0 auto;
+      position:relative;
+
+      #elevatorContainer {
+
+       position:absolute;
+       height:500px;
+        width:100%;
+        bottom:0;
+
+
+
+        #elevator {
+
+          height:20%;
+          overflow:hidden;
+          width:100%;
+          position:relative;
+          box-shadow:0 -10px 0 #333;
+          background:url(http://www.riversideelevators.com/img/elevator_inside.jpg);
+          background-size:100% 100%;
+          .door {
+
+            background:#AAA;
+            width:49%;
+            height:100%;
+            top:0;
+            position:absolute;
+            transition:all 300ms ease-in;
+            &#leftDoor {
+
+            left:0;
+
+            }
+            &#rightDoor {
+
+              right:0;
+               background:#999;
+
+
+
+            }
+
+          }
+            .active-right {
+
+                  right:-50% !important;
+
+                }
+            .active-left {
+
+              left:-50% !important;
+
+             }
+        }
+
+        #strings {
+
+   height:80%;
+         background: -moz-linear-gradient(left, transparent, transparent 10%,#AAA 10%, #AAA 30%, transparent 30%, transparent 40%, #CCC 40%, #CCC 60%, transparent 60%, transparent 70%, #999 70%, #999 90%, transparent 90%, transparent);
+          width:75%;
+        margin: 0 auto;
+
+        }
+      }
+
+    }
+
+
+
+  }
+  #floorSelect {
+
+  text-align:center;
+  position:absolute;
+  background:#FFF;
+  width:20%;
+  left:10%;
+  box-shadow:0 0 5px #362E2B;
+
+  ul {
+
+
+    li {
+      width:50px;
+      float:left;
+      text-align:center;
+      height:50px;
+      line-height:50px;
+      border:1px solid #AAA;
+      margin:13px;
+      transition:all 300ms;
+      border-radius:50%;
+      border:2px solid #DDD;
+
+      &:hover {
+
+  background:#656565;
+        color:#FFF;
+  cursor:pointer;
+  transition:all 300ms;
+
+
+}
+
+    }
+
+  }
+
+h4 {
+
+
+  margin:20px 0 10px;;
+
+
+}
+
+
+}
+  p {
+
+ display:block;
+  width:20%;
+  padding:10px;
+  margin:0 10%;
+  color:#FFF;
+
+}
+}

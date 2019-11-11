@@ -1,0 +1,33 @@
+.display, .panel {
+  width: 9em;
+  text-align: center;
+}
+.display {
+  margin: auto;
+}
+.display div {
+  display: inline-block;
+  margin: 0.2em;
+}
+.number {
+  padding: 0.2em;
+  width: 2em;
+  text-align: right;
+}
+#up-indicator.lit {
+  color: green;
+}
+#down-indicator.lit {
+  color: red;
+}
+.panel {
+  margin: auto;
+}
+.panel button {
+  display: block;
+  margin: auto;
+  width: 3em;
+}
+.panel button.lit {
+  color: yellow;
+}
